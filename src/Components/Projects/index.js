@@ -7,8 +7,7 @@ import LinkIcon from '@material-ui/icons/Link';
 import LanguageIcon from '@material-ui/icons/Language';
 // projects
 import bcl from "../../Images/project/theory..png"
-
-
+import portfolio from "../../Images/project/portfolio.png"
 import chintubot from "../../Images/project/pharmeasy.png"
 
 
@@ -18,7 +17,7 @@ function Index({ secRef }) {
         all: [
             { name: 'Theory.com', image: bcl, github: 'https://github.com/shuklabhisekh/Backened_Of_Theory_Clone', link: 'https://theory-clone-backend.herokuapp.com/' },
             { name: 'PharmEasy', image: chintubot, github: 'https://github.com/anubis-x-ranger/CW-Pharmeasy', link: 'https://hardcore-kirch-79db84.netlify.app/' },
-            { name: '--', image: "" , github: '', link: '' },
+            { name: 'Portfolio', image: portfolio , github: 'https://github.com/ashiq352/Portfoli0', link: 'https://new-portfolio-3402zah4g-ashiq352.vercel.app/#/' },
         ]
     }
     return (
@@ -52,7 +51,7 @@ const Card = (props) => {
             <img src={props.image} alt={props.name} />
         </div>
         <div className="details">
-            <h2>{props.name}<br /><span  > <a href={props.github} ><GitHubIcon />  </a> <a href={props.link}> <LanguageIcon /></a> </span> </h2>
+            <h2>{props.name}<br /><span  > <a href={props.github} target="_blank" ><GitHubIcon />  </a> <a target="_blank" href={props.link}> <LanguageIcon /></a> </span> </h2>
         </div>
     </div></Slide> </div>
 }
