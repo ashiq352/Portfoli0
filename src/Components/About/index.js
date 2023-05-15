@@ -3,7 +3,6 @@ import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Dev from "../../Images/Background/Developer.svg"
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import FileCopy from '@material-ui/icons/FileCopy';
 function About({ secRef }) {
 
     return (
@@ -38,7 +37,7 @@ function About({ secRef }) {
                                         </Slide>
                                         <Slide right>
                                             <p className="lg:mt-5 text-indigo-200 text-base pb-8">
-                                                I am currently learning MERN Stack at Masai School, Bangaluru.
+                                                I am currently working in Byldd as a Full Stack Developer(MERN/MEAN).
                                             </p>
                                         </Slide>
                                         <Slide bottom className="flex-column italic">
@@ -47,7 +46,7 @@ function About({ secRef }) {
                                                     <span className="text-pink-600"><ArrowRightIcon /> </span> Birthday : <span>24 sept 1999  </span>
                                                 </div>
                                                 <div>
-                                                    <span className="text-pink-600"><ArrowRightIcon /> </span>Age : <span>22 </span>
+                                                    <span className="text-pink-600"><ArrowRightIcon /> </span>Age : <span>23 </span>
                                                 </div>
                                             </div>
                                             <div className="lg:flex items-center justify-right lg:gap-14  text-white">
@@ -60,7 +59,7 @@ function About({ secRef }) {
                                             </div>
                                             <div  className="lg:flex items-center justify-right lg:gap-14  text-white">
                                                 <div className="">
-                                                    <span className="text-pink-600"><ArrowRightIcon /> </span> <a href='https://drive.google.com/file/d/1BQFWilpa-sTkxcl9bks07hlARyLAB_vR/view?usp=sharing' target='_blank'>Resume </a>
+                                                    <span className="text-pink-600"><ArrowRightIcon /> </span> <a href='https://drive.google.com/file/d/1Vr02trJTnDQ7paWdEbvNMCOm80Wi-TLl/view?usp=sharing' target='_blank' rel="noreferrer">Resume </a>
                                                 </div>
                                             </div>
                                         </Slide>

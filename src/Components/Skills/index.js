@@ -3,24 +3,16 @@ import React, { useState } from 'react'
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
 import Dev from "../../Images/Background/Dev3.svg"
-
-// Svg
-// import python from "../../Images/Skills/python.svg"
-// import django from "../../Images/Skills/django.svg"
 import javascript from "../../Images/Skills/js.svg"
 import reactjs from "../../Images/Skills/react-js.svg"
 import nodejs from "../../Images/Skills/nodejs.svg"
 import css from "../../Images/Skills/css3.svg"
 import html from "../../Images/Skills/html-5.svg"
 import bootstrap from "../../Images/Skills/bootstrap.svg"
-// import tailwindcss from "../../Images/Skills/tailwindcss.svg"
-// import firebase from "../../Images/Skills/firebase.svg"
 import git from "../../Images/Skills/git.svg"
 import mongodb from "../../Images/Skills/mongodb.svg"
 import heroku from "../../Images/Skills/heroku.svg"
-// import tensorflow from "../../Images/Skills/tensorflow.svg"
 import azure from "../../Images/Skills/azure.svg"
-// import postgresql from "../../Images/Skills/postgresql.svg"
 
 function Index({ secRef }) {
 

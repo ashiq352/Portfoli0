@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment, useRef, useState } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
+import { useRef } from 'react'
+import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
  import FileCopy from '@material-ui/icons/FileCopy';
 
@@ -135,7 +135,7 @@ export default function Navbar({ sections }) {
               </div>
               <div className="cursor-pointer absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0" style={{color:"white"}}>
                 
-                <a  style={{color:"white"}} href="https://drive.google.com/file/d/1BQFWilpa-sTkxcl9bks07hlARyLAB_vR/view?usp=sharing"  target='_blank' className="text-sm font-medium block lg:block  p-2  text-gray-300 hover:text-white focus:outline-none">
+                <a  style={{color:"white"}} href="https://drive.google.com/file/d/1Vr02trJTnDQ7paWdEbvNMCOm80Wi-TLl/view?usp=sharing"  target='_blank' className="text-sm font-medium block lg:block  p-2  text-gray-300 hover:text-white focus:outline-none" rel="noreferrer">
                   <span className="sr-only" ></span>
                   <FileCopy/>Resume
                 </a>

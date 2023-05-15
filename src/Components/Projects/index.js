@@ -1,9 +1,7 @@
 import React from 'react'
 import Slide from 'react-reveal/Slide';
 import Bounce from 'react-reveal/Bounce';
-import styled from "styled-components"
 import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkIcon from '@material-ui/icons/Link';
 import LanguageIcon from '@material-ui/icons/Language';
 // projects
 import bcl from "../../Images/project/theory..png";

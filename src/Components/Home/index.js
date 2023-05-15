@@ -27,14 +27,14 @@ export default function Home({ secRef }) {
               <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                 <div className="sm:text-center lg:text-left">
                   <div className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                    <h1 className="block xl:inline">Hello, I am Ashiq </h1>
+                    <h1 className="block xl:inline">Hello, I am Ashiq. </h1>
 
-                    <h1 className="block text-indigo-600 xl:inline">Full Stack Web Developer</h1>
+                    <h1 className="block text-indigo-600 xl:inline">A Passionate Software Developer</h1>
 
                   </div>
 
                   <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                    Learning MERN Stack at Masai School, Bengaluru
+                    Working as a Full Stack Developer in Byldd IT Limited.
                   </p>
                   <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                     <div className="rounded-md shadow">
