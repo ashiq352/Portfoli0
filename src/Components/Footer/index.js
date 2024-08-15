@@ -9,7 +9,7 @@ import RubberBand from 'react-reveal/RubberBand';
 function index() {
     return (
         <div className = "flex  flex-col font-mono text-center p-10 w-full lg:h-4xl bg-gray-100">
-            <p className = "p-1text-size-xl">Made with ❤️  </p><p className = "pb-10"><CopyrightIcon style = {{ fontSize : 21}}/> Ashiq Khan 2022</p>
+            <p className = "p-1text-size-xl">Made with ❤️  </p><p className = "pb-10"><CopyrightIcon style = {{ fontSize : 21}}/> Ashiq Khan 2024</p>
             <div class = " flex flex-row 10 justify-center gap-2 md:gap-10 ">
             <RubberBand>
             <a  href="https://www.linkedin.com/in/ashiq-khan-412709222/" target="_blank" className = " linkedin cursor-pointer " rel="noreferrer">  <LinkedInIcon style={{fontSize: 50 , color : "#0077b5"}} /> </a>
