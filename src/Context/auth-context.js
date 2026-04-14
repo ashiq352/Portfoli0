@@ -10,9 +10,9 @@ export default function AuthContext({ children }) {
     const value = {
         isLoggedIn: localStorage.getItem("access_token") ? true : false
     }
-    return <AuthContext.Provider value={value}>
+    return <authContext.Provider value={value}>
         {children}
-    </AuthContext.Provider>
+    </authContext.Provider>
 
 
 }

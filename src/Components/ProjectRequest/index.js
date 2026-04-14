@@ -1,9 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import Navbar from './Navbar'
 import OrderForm from './OrderForm'
 import AuthContext from "../../Context/auth-context"
 function Index() {
-    const context = useContext(AuthContext)
     return (
 
         <>

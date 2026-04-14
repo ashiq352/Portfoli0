@@ -1,4 +1,4 @@
-import react, { useRef } from 'react'
+import { useRef } from 'react'
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import About from './Components/About'
@@ -11,7 +11,6 @@ import Login from './Components/ProjectRequest/Auth/Login'
 import Logout from './Components/ProjectRequest/Auth/Logout'
 import SignUp from './Components/ProjectRequest/Auth/SignUp'
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import AuthContext from './Context/auth-context'
 const HomePage = () => {
 
   const SecAbout = useRef()

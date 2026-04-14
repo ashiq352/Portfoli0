@@ -31,7 +31,7 @@ function Index({ secRef }) {
                 </div>
                 <div className="container mx-auto  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3  gap-10 items-center">
                     {Projects.all.map((ele) => {
-                        return <Card name={ele.name} image={ele.image} github={ele.github} link={ele.link} />
+                        return <Card key={ele.name} name={ele.name} image={ele.image} github={ele.github} link={ele.link} />
                     })}
                 </div>
             </div>
@@ -49,7 +49,7 @@ const Card = (props) => {
             <img src={props.image} alt={props.name} />
         </div>
         <div className="details">
-            <h2>{props.name}<br /><span  > <a href={props.github} target="_blank" ><GitHubIcon />  </a> <a target="_blank" href={props.link}> <LanguageIcon /></a> </span> </h2>
+            <h2>{props.name}<br /><span  > <a href={props.github} target="_blank" rel="noreferrer" ><GitHubIcon />  </a> <a target="_blank" rel="noreferrer" href={props.link}> <LanguageIcon /></a> </span> </h2>
         </div>
     </div></Slide> </div>
 }

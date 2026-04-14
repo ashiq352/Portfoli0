@@ -1,31 +1,20 @@
 import FolderOutlinedIcon from '@material-ui/icons/FolderOutlined';
 import { useState } from 'react';
 import ClearIcon from '@material-ui/icons/Clear';
-import ImageIcon from '@material-ui/icons/Image';
-import GifIcon from '@material-ui/icons/Gif';
-import DescriptionIcon from '@material-ui/icons/Description';
 function OrderForm() {
 
     const [datafiles, setDatafiles] = useState([]);
     const [uploadFiles, setUploadFiles] = useState([])
     const FormSubmitHandler = function (event) {
         event.preventDefault();
-        console.log(
-            event.target[0].value,
-            event.target[1].value,
-            event.target[2].value,
-            event.target[3].value)
-        console.log(uploadFiles)
         window.alert("Hey This website is under construction 🚧 \nVisit sometime later😊")
 
     }
     const FileOnChange = function (e) {
         let files = e.target.files;
-        let reader = new FileReader;
-        var file2upload = null
+        let reader = new FileReader();
         reader.readAsDataURL(files[0]);
         reader.onload = (e) => {
-            file2upload = e.target.result
             setUploadFiles([...uploadFiles, e.target.result])
         }
         setDatafiles([...datafiles, files])
@@ -100,14 +89,14 @@ function OrderForm() {
                                         your brief here (Max file size: 25 MB)</span>
                                     <span className="block text-base font-normal opacity-50 md:hidden">Choose any file that might be helpful(Max file size: 25 MB)</span>
                                 </div>
-                            </div> <input name="reference_files" type="file" className="h-full w-full opacity-0" onChange={FileOnChange} name="reference" />
+                            </div> <input type="file" className="h-full w-full opacity-0" onChange={FileOnChange} name="reference_files" />
                         </div>
                     </div>
 
                 </div>
                 <div className="">
                     {datafiles.map((file) => {
-                        return <FileItems file={file} />
+                        return <FileItems key={file[0].name} file={file} />
 
                     })}
                 </div>
@@ -142,4 +131,3 @@ const date = () => {
     today = yyyy + '-' + mm + '-' + dd;
     return today
 }
-

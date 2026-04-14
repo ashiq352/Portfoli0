@@ -29,7 +29,7 @@ function Index({ secRef }) {
 
             <div className=" p-7 flex flex-col text-center text-gray-900 text-md ">
                 <div className="flex justify-center ">
-                    <img className="center h-12 w-auto select-none  " src={props.logo} ></img>
+                    <img className="center h-12 w-auto select-none  " src={props.logo} alt={props.name} />
                 </div>
                 <span className="p-2">{props.name}</span>
             </div>
@@ -65,7 +65,7 @@ function Index({ secRef }) {
                             <div style={{ scrollbarColor: "#4f46e5", maxHeight: "60vh" }} className="skillscroll overflow-y-scroll mx-auto mt-5 grid grid-cols-2  md:grid-cols-3 lg:grid-cols-3   items-center ">
 
                                 {toFilter.map((e) => {
-                                    return <SkillCard logo={e.logo} name={e.name} />
+                                    return <SkillCard key={e.name} logo={e.logo} name={e.name} />
                                 })}
                             </div>
                         </Slide>

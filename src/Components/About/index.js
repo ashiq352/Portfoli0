@@ -1,79 +1,132 @@
-import React from 'react'
-import Slide from 'react-reveal/Slide';
-import Bounce from 'react-reveal/Bounce';
-import Dev from "../../Images/Background/Developer.svg"
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import React from "react";
+import Slide from "react-reveal/Slide";
+import Bounce from "react-reveal/Bounce";
+import Dev from "../../Images/Background/Developer.svg";
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+
 function About({ secRef }) {
+  const calculateAge = (dob) => {
+    const birthDate = new Date(dob);
+    const today = new Date();
 
-    return (
-        <section id="about" ref={secRef} className="bg-gray-900 lg:h-screen">
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDelta = today.getMonth() - birthDate.getMonth();
 
-            <div className=" text-indigo-200 body-font p-2 md:p-5">
-                <div id="about" className="mt-10 text-center">
-                    <Bounce top>
-                        <div className="center text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl">
-                            <h1 className="block xl:inline">About Me</h1>
+    if (
+      monthDelta < 0 ||
+      (monthDelta === 0 && today.getDate() < birthDate.getDate())
+    ) {
+      age -= 1;
+    }
 
-                        </div>
-                    </Bounce>
+    return age;
+  };
+
+  const details = [
+    { label: "Birthday", value: "24 Sept 1999" },
+    { label: "Age", value: calculateAge("1999-09-24") },
+    { label: "City", value: "Gurugram, India" },
+    { label: "Email", value: "khanashiq4494@gmail.com" },
+  ];
+
+  return (
+    <section
+      id="about"
+      ref={secRef}
+      className="section-shell px-4 py-16 sm:px-6 lg:px-10"
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="glass-surface overflow-hidden rounded-3xl px-6 py-12 md:px-10 lg:px-14">
+          <div className="text-center">
+            <Bounce top>
+              <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-teal-700">
+                About
+              </p>
+            </Bounce>
+            <Bounce top>
+              <div className="display-copy text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">
+                <h1>Design-minded development with product focus.</h1>
+              </div>
+            </Bounce>
+          </div>
+
+          <div className="mt-12 grid items-center gap-12 lg:grid-cols-2">
+            <Slide left>
+              <div className="relative mx-auto w-full max-w-lg">
+                <div className="absolute -left-6 top-8 hidden h-24 w-24 rounded-full bg-orange-200 opacity-70 blur-2xl md:block" />
+                <div className="absolute -right-4 bottom-12 hidden h-28 w-28 rounded-full bg-teal-200 opacity-70 blur-2xl md:block" />
+                <div className="relative rounded-3xl border border-white border-opacity-80 bg-white bg-opacity-80 p-5 shadow-2xl">
+                  <img
+                    className="w-full rounded-3xl"
+                    alt="Developer illustration"
+                    src={Dev}
+                  />
                 </div>
+              </div>
+            </Slide>
 
-                <div className="flex justify-center ">
-                    <Slide left>
-                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 sm:block hidden md:ml-20">
-                            <img className="object-cover object-center rounded" alt="hero" src={Dev} />
-                        </div>
-                    </Slide>
-                    <div >
-                        <div>
-                            <div className="mx-auto flex  sm:flex-row flex-col items-center ">
-                                <div className="flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center">
-                                    <div className="pt-10 px-2 sm:px-6">
+            <div>
+              <Slide right>
+                <p className="text-lg leading-8 text-gray-600">
+                  I&apos;m Ashiq Khan, a full-stack developer who enjoys turning
+                  ideas into usable, polished digital products. My work sits at
+                  the intersection of frontend clarity and backend reliability,
+                  with a strong preference for practical solutions that feel
+                  good to use.
+                </p>
+              </Slide>
 
-                                        <Slide right>
-                                            <p className="lg:mt-10 text-indigo-200 text-base pb-6">
-                                                Hi I am Ashiq Khan, An  enthusiastic  full-stack  web  developer  with  in-depthexperience in implementing diverse tech stacks. A highly flexibleteam  player  who  is  passionate  about  building  user-focusedproducts.  Looking  forward  to  working  as  a  developer  andenhancing my technical skills while creating challenging products.
-                                            </p>
-                                        </Slide>
-                                        <Slide right>
-                                            <p className="lg:mt-5 text-indigo-200 text-base pb-8">
-                                                I am currently working in Byldd as a Full Stack Developer(MERN/MEAN).
-                                            </p>
-                                        </Slide>
-                                        <Slide bottom className="flex-column italic">
-                                            <div className="lg:mt-10 flex-column lg:flex items-center justify-right lg:gap-14  text-white">
-                                                <div className="">
-                                                    <span className="text-pink-600"><ArrowRightIcon /> </span> Birthday : <span>24 sept 1999  </span>
-                                                </div>
-                                                <div>
-                                                    <span className="text-pink-600"><ArrowRightIcon /> </span>Age : <span>23 </span>
-                                                </div>
-                                            </div>
-                                            <div className="lg:flex items-center justify-right lg:gap-14  text-white">
-                                                <div className="">
-                                                    <span className="text-pink-600"><ArrowRightIcon /> </span> City : <span>Cuttack, Odisha          </span>
-                                                </div>
-                                                <div>
-                                                    <span className="text-pink-600 "><ArrowRightIcon /> </span>Email : <span>khanashiq4494@gmail.com  </span>
-                                                </div>
-                                            </div>
-                                            <div  className="lg:flex items-center justify-right lg:gap-14  text-white">
-                                                <div className="">
-                                                    <span className="text-pink-600"><ArrowRightIcon /> </span> <a href='https://drive.google.com/file/d/1Vr02trJTnDQ7paWdEbvNMCOm80Wi-TLl/view?usp=sharing' target='_blank' rel="noreferrer">Resume </a>
-                                                </div>
-                                            </div>
-                                        </Slide>
-                                    </div>
+              <Slide right>
+                <p className="mt-6 text-lg leading-8 text-gray-600">
+                  I currently work as a Full Stack Developer at Byldd, building
+                  web experiences across modern JavaScript stacks while growing
+                  deeper in product thinking, architecture, and delivery.
+                </p>
+              </Slide>
 
-
-                                </div>
-                            </div>
-                        </div>
+              <Slide bottom>
+                <div className="mt-8 grid gap-4 sm:grid-cols-2">
+                  {details.map((item) => (
+                    <div
+                      key={item.label}
+                      className="rounded-2xl border border-gray-900 border-opacity-5 bg-white bg-opacity-80 px-5 py-4 text-gray-700 shadow-sm"
+                    >
+                      <div className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-teal-700">
+                        <ArrowRightIcon style={{ fontSize: 18 }} />
+                        {item.label}
+                      </div>
+                      <p className="mt-2 text-base font-medium text-gray-900">
+                        {item.value}
+                      </p>
                     </div>
+                  ))}
                 </div>
+              </Slide>
+
+              <Slide bottom>
+                <div className="mt-8 flex flex-wrap gap-4">
+                  <a
+                    href="https://drive.google.com/file/d/1zHCTNb8q_UjJ7RQuL8JJ97olJC91w2jQ/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center rounded-full bg-gray-900 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:-translate-y-0.5 hover:bg-black"
+                  >
+                    View Resume
+                  </a>
+                  <a
+                    href="#contact"
+                    className="inline-flex items-center rounded-full border border-teal-700 border-opacity-20 bg-teal-50 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-teal-800 transition hover:-translate-y-0.5 hover:bg-teal-100"
+                  >
+                    Contact Me
+                  </a>
+                </div>
+              </Slide>
             </div>
-        </section>
-    )
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
-export default About
+export default About;

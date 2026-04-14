@@ -8,41 +8,41 @@ import RubberBand from 'react-reveal/RubberBand';
 function ContactCard() {
     return (
         <>
-            <div class="hidden flex justify-evenly lg:flex ">
+            <div className="hidden flex justify-evenly lg:flex ">
                 <RubberBand>
-                    <a href="https://www.linkedin.com/in/ashiq-khan-412709222/" target="_blank" className="213313 cursor-pointer ">  <LinkedInIcon style={{ fontSize: 80, color: "#0077b5" }} /> </a>
+                    <a href="https://www.linkedin.com/in/ashiq-khan-412709222/" target="_blank" rel="noreferrer" className="213313 cursor-pointer ">  <LinkedInIcon style={{ fontSize: 80, color: "#0077b5" }} /> </a>
                 </RubberBand>
                 <RubberBand>
-                    <a href="mailto:khanashiq4494@gmail.com?subject=Hello!&body=Hi%20..." target="_blank" className="1323213 cursor-pointer"> <EmailIcon style={{ fontSize: 80, color: "pink" }} /> </a>
+                    <a href="mailto:khanashiq4494@gmail.com?subject=Hello!&body=Hi%20..." target="_blank" rel="noreferrer" className="1323213 cursor-pointer"> <EmailIcon style={{ fontSize: 80, color: "pink" }} /> </a>
                 </RubberBand>
                 <RubberBand>
-                    <a href="https://www.instagram.com/_aashiq_khan_3" target="_blank" className="fdsds cursor-pointer"> <InstagramIcon style={{ fontSize: 80, color: "#E1306C" }} /> </a>
+                    <a href="https://www.instagram.com/_aashiq_khan_3" target="_blank" rel="noreferrer" className="fdsds cursor-pointer"> <InstagramIcon style={{ fontSize: 80, color: "#E1306C" }} /> </a>
                 </RubberBand>
                 <RubberBand>
-                    <a href="https://github.com/ashiq352" target="_blank" className="zczxcz cursor-pointer"> <GitHubIcon style={{ fontSize: 70, color: "white" }} /> </a>
+                    <a href="https://github.com/ashiq352" target="_blank" rel="noreferrer" className="zczxcz cursor-pointer"> <GitHubIcon style={{ fontSize: 70, color: "white" }} /> </a>
                 </RubberBand>
                 <RubberBand>
-                    <a href="https://api.whatsapp.com/send?phone=917855814343&text=Hi!" target="_blank" className="dasdas cursor-pointer"> <WhatsAppIcon style={{ fontSize: 80, color: "#128c7e" }} /> </a>
+                    <a href="https://api.whatsapp.com/send?phone=917855814343&text=Hi!" target="_blank" rel="noreferrer" className="dasdas cursor-pointer"> <WhatsAppIcon style={{ fontSize: 80, color: "#128c7e" }} /> </a>
                 </RubberBand>
 
 
 
             </div>
-            <div class=" flex flex-row sm:ml-10 sm:flex-col justify-evenly lg:hidden md:flex ">
+            <div className=" flex flex-row sm:ml-10 sm:flex-col justify-evenly lg:hidden md:flex ">
                 <RubberBand>
-                    <a href="https://www.linkedin.com/in/ashiq-khan-412709222/" target="_blank" className=" linkedin cursor-pointer ">  <LinkedInIcon style={{ fontSize: 50, color: "#0077b5" }} /> </a>
+                    <a href="https://www.linkedin.com/in/ashiq-khan-412709222/" target="_blank" rel="noreferrer" className=" linkedin cursor-pointer ">  <LinkedInIcon style={{ fontSize: 50, color: "#0077b5" }} /> </a>
                 </RubberBand>
                 <RubberBand>
-                    <a href="mailto:khanashiq4494@gmail.com?subject=Hello!&body=Hi%20..." target="_blank" className="gmail cursor-pointer"> <EmailIcon style={{ fontSize: 50, color: "pink" }} /> </a>
+                    <a href="mailto:khanashiq4494@gmail.com?subject=Hello!&body=Hi%20..." target="_blank" rel="noreferrer" className="gmail cursor-pointer"> <EmailIcon style={{ fontSize: 50, color: "pink" }} /> </a>
                 </RubberBand>
                 <RubberBand>
-                    <a href="https://www.instagram.com/_aashiq_khan_3" target="_blank" className="insta cursor-pointer"> <InstagramIcon style={{ fontSize: 50, color: "#E1306C" }} /> </a>
+                    <a href="https://www.instagram.com/_aashiq_khan_3" target="_blank" rel="noreferrer" className="insta cursor-pointer"> <InstagramIcon style={{ fontSize: 50, color: "#E1306C" }} /> </a>
                 </RubberBand>
                 <RubberBand>
-                    <a href="https://github.com/ashiq352" target="_blank" className="zfdz cursor-pointer"> <GitHubIcon style={{ fontSize: 45, color: "white" }} /> </a>
+                    <a href="https://github.com/ashiq352" target="_blank" rel="noreferrer" className="zfdz cursor-pointer"> <GitHubIcon style={{ fontSize: 45, color: "white" }} /> </a>
                 </RubberBand>
                 <RubberBand>
-                    <a href="https://api.whatsapp.com/send?phone=917855814343&text=Hi!" target="_blank" className="asdasd cursor-pointer"> <WhatsAppIcon style={{ fontSize: 50, color: "#128c7e" }} /> </a>
+                    <a href="https://api.whatsapp.com/send?phone=917855814343&text=Hi!" target="_blank" rel="noreferrer" className="asdasd cursor-pointer"> <WhatsAppIcon style={{ fontSize: 50, color: "#128c7e" }} /> </a>
                 </RubberBand>
 
 
