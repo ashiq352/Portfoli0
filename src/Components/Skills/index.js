@@ -53,7 +53,7 @@ function Index({ secRef }) {
                 <div className="flex justify-evenly gap-10 ">
                     <div className="">
                         <Slide left>
-                            <select onChange={(event) => { setFilter(JSON.parse(event.target.value)) }} className="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-1 px-1 rounded outline-none" >
+                            <select onChange={(event) => { setFilter(JSON.parse(event.target.value)) }} className="bg-[#A79687] hover:bg-[#A79687] text-black font-bold py-1 px-1 rounded outline-none" >
                                 <option value={JSON.stringify(Skills.all)}>All</option>
                                 <option value={JSON.stringify(Skills.frontend)}>Frontend</option>
                                 <option value={JSON.stringify(Skills.backend)}>Backend</option>

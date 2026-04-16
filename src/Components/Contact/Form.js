@@ -72,7 +72,7 @@ function Form() {
     return (
         <div className="font-sans flex-grow m-5 rounded-xl border-2 border-blue-700 bg-gray-100 p-5 md:p-10 lg:p-10 lg:pb-20 lg:pl-10 lg:pr-10 lg:pt-10" style={{ maxWidth: "600px" }}>
             <div className="flex justify-center">
-                <h2 className="pb-5 pt-5 text-2xl md:pb-10 lg:pb-10">Send me a message 🙂</h2>
+                <h2 className="pb-5 pt-5 text-2xl md:pb-10 lg:pb-10">Send me a message 😊</h2>
             </div>
 
             <form onSubmit={FormSubmitHandler}>

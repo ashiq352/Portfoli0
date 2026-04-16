@@ -1,10 +1,13 @@
-import Slide from 'react-reveal/Slide';
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import ashiq from "../../Images/Pages/profile_pic.jpg"
+import Slide from "react-reveal/Slide";
+import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
+import ashiq from "../../Images/Pages/profile_pic.jpg";
 
 export default function Home({ secRef }) {
   return (
-    <section className="section-shell min-h-screen px-4 pt-6 pb-12 sm:px-6 lg:px-10" ref={secRef}>
+    <section
+      className="section-shell min-h-screen px-4 pt-6 pb-12 sm:px-6 lg:px-10"
+      ref={secRef}
+    >
       <div className="mx-auto max-w-7xl">
         <div className="glass-surface relative overflow-hidden rounded-3xl">
           <div className="absolute inset-0 bg-gradient-to-br from-white via-transparent to-green-50 opacity-90" />
@@ -15,21 +18,34 @@ export default function Home({ secRef }) {
             <Slide left>
               <div className="max-w-2xl">
                 <p className="mb-5 inline-flex rounded-full border border-teal-700 border-opacity-20 bg-white bg-opacity-70 px-4 py-2 text-sm font-semibold uppercase tracking-widest text-teal-800">
-                  My Portfolio 2026
+                  My Portfolio {new Date().getFullYear()}
                 </p>
 
-                <div className="display-copy text-5xl font-bold leading-tight text-gray-900 sm:text-6xl lg:text-7xl">
-                  <h1>Building thoughtful products for the web.</h1>
+                <div className="display-copy text-2xl font-bold leading-tight text-gray-900 sm:text-3xl lg:text-5xl">
+                  <h1>Building scalable products that users actually enjoy.</h1>
                 </div>
 
-                <p className="mt-6 max-w-xl text-lg leading-8 text-gray-600 sm:text-xl">
-                  I&apos;m Ashiq Khan, a full-stack developer focused on shipping clean user experiences, reliable product flows, and interfaces that feel modern from the first glance.
+                <p className="mt-6 max-w-xl text-xs leading-8 text-gray-600 sm:text-xl">
+                  I&apos;m Ashiq Khan, a Senior Full-Stack Developer with{" "}
+                  <span className="font-bold">4+ Years Experience</span>{" "}
+                  building scalable, high-performance web applications using
+                  TypeScript and Node.js.I focus on creating clean
+                  architectures, fast APIs, and intuitive user experiences that
+                  drive real business impact.From backend systems to polished
+                  frontends, I take products from idea to production with
+                  performance and reliability in mind.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-3 text-sm font-medium text-gray-700">
-                  <span className="rounded-full bg-white bg-opacity-80 px-4 py-2 shadow-sm">MERN / MEAN</span>
-                  <span className="rounded-full bg-white bg-opacity-80 px-4 py-2 shadow-sm">Product-minded UI</span>
-                  <span className="rounded-full bg-white bg-opacity-80 px-4 py-2 shadow-sm">Based in Gurugram</span>
+                  <span className="rounded-full bg-white bg-opacity-80 px-4 py-2 shadow-sm">
+                    MERN / MEAN
+                  </span>
+                  <span className="rounded-full bg-white bg-opacity-80 px-4 py-2 shadow-sm">
+                    Product-minded UI
+                  </span>
+                  <span className="rounded-full bg-white bg-opacity-80 px-4 py-2 shadow-sm">
+                    Based in India
+                  </span>
                 </div>
 
                 <div className="mt-10 flex flex-wrap gap-4">
@@ -72,5 +88,5 @@ export default function Home({ secRef }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
